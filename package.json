@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
-    "react-native-thermal-ble": "file:../thermal-ble-library",
+    "react-native-thermal-ble": "github:power-of-life-labs/react-native-thermal-ble#v0.1.0",
     "typescript": "^5.9.0"
   },
   "sideEffects": false
