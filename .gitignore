@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+*.log
+.DS_Store
+
+# Generated native projects of the example app
+example/ios/
+example/android/

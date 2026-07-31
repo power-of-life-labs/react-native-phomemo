@@ -1,0 +1,58 @@
+{
+  "name": "react-native-phomemo",
+  "version": "0.1.0",
+  "description": "Print to Phomemo thermal printers (T02) over Bluetooth LE from React Native / Expo on iOS and Android.",
+  "license": "MIT",
+  "author": "Dominik Brumm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/power-of-life-labs/react-native-phomemo.git"
+  },
+  "homepage": "https://github.com/power-of-life-labs/react-native-phomemo#readme",
+  "bugs": {
+    "url": "https://github.com/power-of-life-labs/react-native-phomemo/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "keywords": [
+    "phomemo",
+    "phomemo-t02",
+    "escpos",
+    "thermal-printer",
+    "label-printer",
+    "bluetooth",
+    "ble",
+    "react-native",
+    "expo"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "pretest": "tsc -p tsconfig.json",
+    "test": "node --test \"build/__tests__/*.test.js\"",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "react-native-thermal-ble": ">=0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "react-native-thermal-ble": "file:../thermal-ble-library",
+    "typescript": "^5.9.0"
+  },
+  "sideEffects": false
+}

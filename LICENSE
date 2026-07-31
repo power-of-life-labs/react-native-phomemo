@@ -1,0 +1,41 @@
+MIT License
+
+Copyright (c) 2026 Dominik Brumm
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---------------------------------------------------------------------------
+
+This library's protocol implementation is a TypeScript port derived from two
+MIT-licensed reverse-engineering projects. Neither is a runtime dependency;
+their work is gratefully acknowledged.
+
+1) niimbot-web-bluetooth — https://github.com/iscarelli/niimbot-web-bluetooth
+   Copyright (c) iscarelli — MIT License.
+   Source of the hardware-validated V4 / B1 print-task sequences, the
+   total-mode row encoding, the run-length scheme, and the BLE flow-control
+   findings.
+
+2) niimbluelib — https://github.com/MultiMote/niimbluelib
+   Copyright (c) MultiMote — MIT License.
+   Source of the printer model registry (model ids, dpi, printhead widths,
+   print directions, density ranges) and the packet abstractions.
+
+Both projects are distributed under the MIT License, the full text of which
+appears above and applies equally to the portions derived from them.
