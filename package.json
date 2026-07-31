@@ -42,9 +42,10 @@
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf dist build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "pretest": "tsc -p tsconfig.json",
+    "pretest": "npm run clean:tests && tsc -p tsconfig.json",
     "test": "node --test \"build/__tests__/*.test.js\"",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "clean:tests": "rm -rf build"
   },
   "peerDependencies": {
     "react-native-thermal-ble": ">=0.1.0"
